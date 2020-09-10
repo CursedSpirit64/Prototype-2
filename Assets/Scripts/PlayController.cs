@@ -5,12 +5,13 @@ using System.Security.Cryptography;
 using UnityEngine;
 
 public class PlayController : MonoBehaviour
-public float horizontalInput;
-public float speed = 10.0f;
-public float xRange = 10;
+
 {
-    // Start is called before the first frame update
-    void Start()
+    public float horizontalInput;
+    public float speed = 10.0f;
+    public float xRange = 10;
+// Start is called before the first frame update
+void Start()
     {
         
     }
