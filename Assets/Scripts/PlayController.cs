@@ -34,6 +34,7 @@ void Start()
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Launch a projectile by from the player
+            Instantiate(projectilePrehab, transform.position, projectilePrehab.transform.rotation);
         }
     }
 }
