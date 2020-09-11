@@ -10,6 +10,8 @@ public class PlayController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
+
+    public GameObject projectilePrehab;
 // Start is called before the first frame update
 void Start()
     {
