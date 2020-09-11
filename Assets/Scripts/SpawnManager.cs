@@ -19,11 +19,16 @@ public class SpawnManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            //Randomly Generate animal index and spawn position
-            Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-            int animalIndex = UnityEngine.Random.Range(0, animalPrefabs.Length);
-
-            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            SpawnRandomAnimal();
         }
+    }
+
+    void SpawnRandomAnimal()
+    {
+        //Randomly Generate animal index and spawn position
+        Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        int animalIndex = UnityEngine.Random.Range(0, animalPrefabs.Length);
+
+        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
 }
